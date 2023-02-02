@@ -1,5 +1,4 @@
 import { useState } from "react";
-import "../Book.css";
 import Reserve from "./Reserve";
 import Ticket from "./Ticket";
 import Spinner from "../assets/spinner.svg";

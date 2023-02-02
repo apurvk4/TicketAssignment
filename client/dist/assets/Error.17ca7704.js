@@ -1,0 +1,1 @@
+import{j as o,a as r,L as a}from"./index.6e2ee43a.js";const e=()=>o("div",{className:"card",children:[r("h2",{children:"Error 404 Page Not Found"}),r(a,{to:"/",children:"Go Back to Home"})]});export{e as default};
