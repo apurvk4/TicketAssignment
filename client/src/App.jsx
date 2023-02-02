@@ -1,29 +1,12 @@
-import { lazy, Suspense } from "react";
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import Loading from "./Components/Loading";
-const Book = lazy(() => import("./Components/Book"));
-const Error = lazy(() => import("./Components/Error"));
-
+import Book from "./Components/Book";
+import Error from "./Components/Error";
 const App = () => {
   return (
     <Routes>
-      <Route
-        path="/"
-        element={
-          <Suspense fallback={<Loading />}>
-            <Book />
-          </Suspense>
-        }
-      />
-      <Route
-        path="*"
-        element={
-          <Suspense fallback={<Loading />}>
-            <Error />
-          </Suspense>
-        }
-      />
+      <Route path="/" element={<Book />} />
+      <Route path="*" element={<Error />} />
     </Routes>
   );
 };
