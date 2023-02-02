@@ -5,7 +5,6 @@
   "main": "api/index.js",
   "scripts": {
     "dev": "nodemon api/index.js",
-    "prestart": "npm i && cd client && npm i && npm run build && cd ..",
     "start": "node api/index.js"
   },
   "keywords": [],
