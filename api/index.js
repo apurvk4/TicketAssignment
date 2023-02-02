@@ -11,7 +11,10 @@ const PORT = process.env.PORT || 5000;
 mongoose.set("strictQuery", false);
 function corsMiddleWare(req, res, next) {
   console.log(req.socket.remoteAddress);
-  res.setHeader("Access-Control-Allow-Origin", `http://localhost:4000`);
+  res.setHeader(
+    "Access-Control-Allow-Origin",
+    `https://ticket-assignment.vercel.app`
+  );
   res.removeHeader("X-powered-by");
   res.setHeader("Access-Control-Allow-Methods", "GET,HEAD,POST");
   res.setHeader("Access-Control-Allow-Credentials", "true");
