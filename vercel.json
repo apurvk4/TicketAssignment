@@ -8,12 +8,8 @@
   ],
   "rewrites": [
     {
-      "source": "/",
-      "destination": "/"
-    },
-    {
       "source": "/(.*)",
-      "destination": "/"
+      "destination": "/api"
     }
   ]
 }
