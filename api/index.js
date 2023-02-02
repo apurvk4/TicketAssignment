@@ -37,6 +37,9 @@ connect()
     app.get("/favicon.ico", (req, res) => {
       res.sendFile(path.join(__dirname, "..", "client", "dist", "vite.svg"));
     });
+    app.get("/", (req, res) => {
+      res.sendFile(path.join(__dirname, "..", "client", "dist", "index.html"));
+    });
     app.get("/*", (req, res) => {
       res.sendFile(path.join(__dirname, "..", "client", "dist", "index.html"));
     });
